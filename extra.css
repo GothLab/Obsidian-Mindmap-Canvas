@@ -1,0 +1,346 @@
+html body #app .toolbarContainer .toolbar .toolbarBlock {
+    display: flex;
+    
+     background-color: transparent; 
+    
+    padding: 10px 20px;
+    border-radius: 6px;
+    color: #bcbcbc;
+     box-shadow: none;
+     border: 0;
+    
+    margin-right: 20px;
+},
+
+
+
+html body #app .sidebarContainer {
+    position: fixed;
+    right: -300px;
+    top: 100px;
+    bottom: 0;
+    width: 300px;
+    
+    background-color: #666;
+    
+    border-left: 1px solid #e8e8e8;
+    display: flex;
+    flex-direction: column;
+    transition: all .3s;
+},
+
+html body #app .navigatorContainer{
+    padding: 0 12px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: transparent!important;
+    border-radius: 5px;
+    opacity: .8;
+    height: 44px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+},
+
+html body #app .countContainer {
+    padding: 0 12px;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    
+     background: transparent;
+    
+    border-radius: 2px;
+    opacity: .8;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    display: flex;
+}
+
+
+html body #app  .toolbarContainer .toolbar .toolbarBtn .icon {
+    
+    background: transparent!important;
+    border: 1px solid #3232322b;
+    
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2c2c2c30; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffffff8a; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+html body #app .countContainer{
+    padding: 0 12px;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    background: transparent;
+    border-radius: 2px;
+    opacity: .8;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    display: flex;
+}
+
+html body #app  .navigatorBox {
+background-color: #2b2b2b;
+
+}
+
+html body #app .sidebarContainer {
+background-color: #2b2b2b;
+border-left: 1px solid #262626;
+}
+
+html body #app .sidebarContainer .sidebarHeader {
+border-bottom: 1px solid #201f1f;
+
+}
+
+html body #app .el-tabs__nav-wrap::after {
+background-color: #535353;
+}
+
+html body #app .el-input__inner {
+background-color: #333;
+border: 1px solid #2e2e2f;
+}
+
+html body #app .sidebarContent .row .rowItem .block {
+border: 1px solid #404040;
+
+}
+
+html body #app .el-select-dropdown {
+border: 1px solid #3d3d3e;
+background-color: #242424;
+}
+
+html body #app .el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+background-color: #333;
+}
+
+html body #app .el-popover {
+background: #333;
+border: 1px solid #353535;
+}
+
+#app {
+color: #575757;
+    font-family: Avenir,Helvetica,Arial,sans-serif;
+}
+
+html body #app .sidebarContent .title{
+color: rgba(162, 156, 156, 0.9);
+}
+
+html body #app .sidebarContent .row .styleBtn {
+background: #2d2d2d;
+border: 1px solid #262626;
+}
+
+html body #app .colorShow {
+  background-color: rgb(64, 158, 255);
+} 
+
+html body #app .el-dialog {
+background: #222;
+}
+
+html body #app .el-button {
+background: #333;
+border: 1px solid #222;
+}
+
+html body #app .toastui-editor-defaultUI {
+border: 1px solid #4f4f4f;
+}
+
+html body #app .toastui-editor-defaultUI-toolbar {
+background-color: #313131;
+border-bottom: 1px solid #2d2d2d;
+}
+
+html body #app .box .title { 
+color: #595959;
+}
+
+html body #app .box .list .item .name {
+  color: #848484;
+}
+
+html body #app .el-input__inner {
+background-color: #333 !important;
+
+}
+
+html body #app .el-input.is-disabled .el-input__inner {
+
+border-color: #3c3c3c;
+color: #404040;
+}
+
+html body #app .sidebarContent .title {
+
+color: rgba(145, 145, 145, 0.9);
+}
+
+html body #app .el-tabs__item {
+color: #484848;
+}
+
+html body #app .el-color-picker__panel{
+background-color: #1a1919;
+border: 1px solid #1c1c1c;
+}
+
+html body #app .toolbarContainer .toolbar .toolbarBtn .icon{
+background: #262626!important;
+}
+
+html body #app .toolbarContainer .toolbar{
+font-family: Avenir,Helvetica,Arial,sans-serif;
+font-size: 8px;
+}
+
+html body #app.toolbarContainer .toolbar .toolbarBtn{
+justify-content: flex-start;
+text-transform: uppercase;
+}
+
+html body #app.listBox{
+
+background: #262626;
+color: #aaaaaa;
+}
+
+html body #app .contextmenuContainer  {
+font-family: Avenir,Helvetica,Arial,sans-serif;
+    background: #363636;
+}
+
+
+
+html body #app .contextmenuContainer .item:hover {
+
+    background: #363636;
+}
+
+html body #app .listBox{
+    width: 200px;
+background: #262626;
+color: #aaaaaa;
+    box-shadow: 0 4px 12px 0 hsl(0deg 0% 26% / 50%);
+    border-radius: 4px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+
+html body #app.toolbarContainer .toolbar {
+    
+     padding: 0px; 
+    padding-top: 0px;
+    
+    
+}
+
+
+html body #app .toolbarContainer .toolbar .toolbarBlock {
+    
+    padding: 0;
+    
+    
+}
+
+
+html body #app .toolbarContainer .toolbar .toolbarBlock {
+    padding: 0;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+html body #app .toolbarBtn .text {
+    
+    display: none;
+    
+}
+
+html body #app .toolbarContainer .toolbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+
+
+    font-weight: 400;
+    color: rgba(26,26,26,.8);
+    z-index: 2;
+    overflow: hidden;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+html body #app .toastui-editor-contents p {
+   
+    color: #a0a0a0;
+}
+
+
+html body #app .noteContentViewer {
+    
+        max-width: 313px;
+    max-height: 300px;
+    overflow: auto;
+    word-break: break-word;
+    background-color: #2d2d2d;
+}
+
+
+html body #app .toastui-editor-mode-switch {
+    background-color: #171717;
+    border-top: 1px solid #3f3f3f;
+
+}
+
+
+html body #app .toastui-editor-defaultUI-toolbar button {
+    
+    border: 1px solid #494949;
+    
+}
+
+html body #app .toastui-editor-defaultUI-toolbar button:not(:disabled):hover {
+    border: 1px solid #4d4f53;
+    background-color: #3e3e3e;
+}
+
+
+html body #app .noteContentViewer {
+    
+    margin-top: -20px;
+} 

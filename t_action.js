@@ -13,7 +13,7 @@ function trax () {
   //  var translator = $('body').translate({lang: "en", t: dict}); 
     
     //CSS Transparency 
-    $('.navigatorContainer[data-v-cb676eca]').css('background','transparent');
+    $('.navigatorContainer').css('background','transparent');
 }
 
 
@@ -100,9 +100,45 @@ function loader () {
     
 }
 
+setInterval(function () {
+     var thismap = localStorage.getItem('SIMPLE_MIND_MAP_DATA');
+   localStorage.setItem(mapname,thismap)}, 1000);
 
  setTimeout(function(){window.onbeforeunload = function () {
      var thismap = localStorage.getItem('SIMPLE_MIND_MAP_DATA');
    localStorage.setItem(mapname,thismap)
 };}, 5000);
+
+
+
+$('.toolbarBtn').css('opacity','30%');
+
+$('.toolbarBtn').hover(
+  function () {
+    var x = $(this).find('.text').text();
+      $(this).attr('title',x)
+      $(this).css('opacity','100%');
+      
+  }, 
+  function () {
+  //  $(this).find('.text').hide();
+      $(this).css('opacity','30%');
+  }
+);
+
+$('.countContainer').hide();
+
+
+
+//Show noteContentViewer on hover
+$('.noteContentViewer').hover(
+  function () {
+    $(this).css('visibility','visible');
+   
+  }, 
+  function () {
+    $(this).css('visibility','hidden');
+      
+  }
+);
 
