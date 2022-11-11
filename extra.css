@@ -102,7 +102,9 @@ html body #app .countContainer{
 }
 
 html body #app  .navigatorBox {
-background-color: #2b2b2b;
+    background-color: #2b2b2b;
+    box-shadow: 0 0 16px #252525;
+    border: 1px solid #343434;
 
 }
 
@@ -189,7 +191,8 @@ html body #app .box .list .item .name {
 }
 
 html body #app .el-input__inner {
-background-color: #333 !important;
+background-color: transparent ;
+    border: none;
 
 }
 
@@ -344,3 +347,25 @@ html body #app .noteContentViewer {
     
     margin-top: -20px;
 } 
+
+
+
+html body  .el-select-dropdown {
+background-color: #2a2a2a;
+border: 1px solid #3c3c3c;
+
+}
+
+html body   .el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+    background-color: #3b3b3b;
+}
+
+html body   .el-popper[x-placement^=top] .popper__arrow:after {
+border-top-color: #2a2a2a;
+
+}
+
+html body   .el-popper[x-placement^=top] .popper__arrow {
+
+border-top-color: #2a2a2a;
+}
