@@ -369,3 +369,16 @@ html body   .el-popper[x-placement^=top] .popper__arrow {
 
 border-top-color: #2a2a2a;
 }
+
+
+
+html body #app .toolbarContainer .toolbar .toolbarBtn.disabled {
+    
+    color: #525252;
+    
+}
+
+
+html body #app .navigatorContainer {
+    background: transparent;
+}

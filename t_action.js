@@ -1,21 +1,5 @@
 
 
-function trax () {
-    //Find all unwrapped text and wrap it in span
-    $('div').contents().filter(function() {
-    return this.nodeType === 3;
-}).wrap('<span></span>');
-
-    //Find all span and add a trn class
-    $('span').each(function(){$(this).addClass('trn')});
-
-    //Translate all to English
-  //  var translator = $('body').translate({lang: "en", t: dict}); 
-    
-    //CSS Transparency 
-    $('.navigatorContainer').css('background','transparent');
-}
-
 
 
 //Set function for taking name of map from url
@@ -90,7 +74,7 @@ if (mapname in localStorage) {
 
 
 
-window.onload =  trax(); mapname_get(); mapname_work();
+window.onload =  mapname_get(); mapname_work();
 
 
 function loader () {
@@ -100,6 +84,9 @@ function loader () {
     
 }
 
+
+// Autosave for obsidian cos on exit dosnt works
+// Onexit for chrome etc
 setInterval(function () {
      var thismap = localStorage.getItem('SIMPLE_MIND_MAP_DATA');
    localStorage.setItem(mapname,thismap)}, 1000);
@@ -108,6 +95,10 @@ setInterval(function () {
      var thismap = localStorage.getItem('SIMPLE_MIND_MAP_DATA');
    localStorage.setItem(mapname,thismap)
 };}, 5000);
+
+
+
+
 
 
 
@@ -125,6 +116,7 @@ $('.toolbarBtn').hover(
       $(this).css('opacity','30%');
   }
 );
+
 
 $('.countContainer').hide();
 
