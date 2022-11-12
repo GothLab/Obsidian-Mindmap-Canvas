@@ -98,7 +98,7 @@ html body #app .countContainer{
     height: 22px;
     line-height: 22px;
     font-size: 12px;
-    display: none;
+
 }
 
 html body #app  .navigatorBox {
@@ -458,3 +458,17 @@ color: white;
 
 
   }
+
+
+  button.ZEN {
+    margin-right: 6px;
+    margin-left: 12px;;
+    padding: 7px;
+    font-size: 15px;
+    border-radius: 18px;
+    color: #ababab85;
+    cursor: pointer;
+    border: none;
+    opacity: 60%;
+    background: #5b5b5b4f;
+}

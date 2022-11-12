@@ -125,8 +125,7 @@ $('.toolbarBtn').hover(
 );
 
 
-// Maybe create 'ZEN' mode with minimal of ui?
-$('.countContainer').hide();
+
 
 
 
@@ -210,3 +209,19 @@ console.log(KEYS);
 $.each(KEYS, function(i, obj) {
   $('#maplist').append("<option value="+obj+"></option>")
 });
+
+
+
+// Maybe create 'ZEN' mode with minimal of ui?
+var ZEN = '<button title="Zen mode" class="ZEN">⦿</button>'
+$('.navigatorContainer').append(ZEN);
+$('.ZEN').on('click',ZEN_mode);
+function ZEN_mode() {
+
+  $('.toolbar').toggle();
+  $('.countContainer').toggle();
+  $('.navigatorContainer').children().toggle();
+  $('.ZEN').css('display','block');
+  
+
+}
