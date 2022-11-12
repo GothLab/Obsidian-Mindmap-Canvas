@@ -7,6 +7,11 @@ var mapname = null;
 var savedmap = null;
 var thismap = localStorage.getItem('SIMPLE_MIND_MAP_DATA');
 
+//Array for loading panel
+
+const saved_maps = [];
+
+
 
 
 function mapname_get () {
@@ -29,7 +34,8 @@ $.each(result, function() {
 }); 
  mapname = result.mapname;
  savedmap = localStorage.getItem(mapname);
-
+ saved_maps.push(mapname);
+// localStorage.setItem('saved_maps',saved_maps);   
 };
 
 
@@ -134,3 +140,8 @@ $('.noteContentViewer').hover(
   }
 );
 
+
+
+
+//English Default
+//localStorage.setItem('SIMPLE_MIND_MAP_LANG','en');
