@@ -98,7 +98,7 @@ html body #app .countContainer{
     height: 22px;
     line-height: 22px;
     font-size: 12px;
-    display: flex;
+    display: none;
 }
 
 html body #app  .navigatorBox {
@@ -382,3 +382,79 @@ html body #app .toolbarContainer .toolbar .toolbarBtn.disabled {
 html body #app .navigatorContainer {
     background: transparent;
 }
+
+button.addMap {
+    padding: 2px;
+    margin-left: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #b5b5b5;
+    background: #585858;
+    border: none;
+    opacity: 70%;
+  }
+
+  button.addMap:hover {
+    opacity: 100%;
+    
+      }
+  
+  button.deleteMap {
+    padding: 2px;
+    margin-left: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #b5b5b5;
+    background: #585858;
+    border: none;
+    opacity: 70%;
+  }
+
+  button.deleteMap:hover {
+opacity: 100%;
+background-color: rgb(146, 9, 9);
+color: white;
+
+  }
+  
+  button.deleteMap {
+    /* padding-left: 8px; */
+    /* padding-right: 8px; */
+    /* border-radius: 3px; */
+    /* font-size: 15px; */
+    padding-left: 6px;
+    padding-right: 6px;
+    /* border-radius: 3px; */
+    margin-right: 8px;
+    font-size: 12px;
+    border: none;
+    /* color: #b5b5b5; */
+    /* background: #585858; */
+    color: #585858;
+    background: #343434;
+  }
+
+  .selectMap {
+    background: #383838;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    margin-left: 1px;
+    margin-right: 6px;
+    opacity: 70%;
+  }
+
+  .selectMap:focus-visible {
+border: none;
+opacity: 100%;
+outline: none;
+color: white;
+
+
+  }
