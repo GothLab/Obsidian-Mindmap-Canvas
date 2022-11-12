@@ -146,6 +146,18 @@ $('.noteContentViewer').hover(
 //English Default
 //localStorage.setItem('SIMPLE_MIND_MAP_LANG','en');
 
-var selector = '<button title="Delete Map" class="deleteMap">X</button><input class="selectMap" title="Type new map name, Ctrl+Backspace to delete text. Click X to remove map, Click + to create new." placeholder="Select a map" type="text" list="categories" name="category"><datalist id="categories"><option name="table1" value="1" selected="true" disabled="disabled">Select A Category</option><option name="category1" value="general">General</option><option name="Category2" value="tech">Tech</option></datalist><button title="Create New Map" class="addMap">+</button>'
+var selector = '<button title="Delete Map" class="deleteMap">X</button><input class="selectMap" title="Type new map name, Ctrl+Backspace to delete text. Click X to remove map, Click + to create new." placeholder="Select a map" type="text" list="maplist" name="category"><datalist id="maplist"><option name="table1" value="1" selected="true" disabled="disabled">Select A Category</option><option name="category1" value="general">General</option><option name="Category2" value="tech">Tech</option></datalist><button title="Create New Map" class="addMap">+</button>'
 
 $('.navigatorContainer').prepend(selector);
+
+$('.selectMap').attr('onfocus','this.value=""');
+
+$(".selectMap").on('input', function () {
+  var val = this.value;
+  if($('#maplist option').filter(function(){
+      return this.value.toUpperCase() === val.toUpperCase();        
+  }).length) {
+      //send ajax request
+      alert(this.value);
+  }
+});
