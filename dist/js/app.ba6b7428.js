@@ -4579,7 +4579,7 @@
         let t = this.activeNodeList[0];
         if (t.isRoot) this.insertChildNode();
         else {
-          let e = 1 === t.layerIndex ? "二级节点" : "分支主题";
+          let e = 1 === t.layerIndex ? "Theme" : "Node";
           1 === t.layerIndex && (t.parent.initRender = !0);
           let i = this.getNodeIndex(t);
           t.parent.nodeData.children.splice(i + 1, 0, {
@@ -4594,7 +4594,7 @@
         this.activeNodeList.length <= 0 ||
           (this.activeNodeList.forEach((t) => {
             t.nodeData.children || (t.nodeData.children = []);
-            let e = t.isRoot ? "二级节点" : "分支主题";
+            let e = t.isRoot ? "Theme" : "Node";
             t.nodeData.children.push({
               inserting: !0,
               data: { text: e, expand: !0 },
@@ -9574,8 +9574,8 @@
           supportFile: "Support .smm、.json、.xmind、.xlsx file",
         },
         navigatorToolbar: {
-          openMiniMap: "Open mini map",
-          readonly: "Readonly",
+          openMiniMap: "Minimap",
+          readonly: "Preview",
           edit: "Edit",
         },
         nodeHyperlink: { title: "Link", link: "Href", name: "Name" },

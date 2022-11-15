@@ -472,3 +472,12 @@ color: white;
     opacity: 60%;
     background: #5b5b5b4f;
 }
+
+.mapname {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.509);
+}

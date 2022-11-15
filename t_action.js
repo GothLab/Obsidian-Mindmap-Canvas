@@ -150,7 +150,7 @@ $('.noteContentViewer').hover(
 
 
 //Creating map selecting input 
-var selector = '<button title="Delete Map" class="deleteMap">X</button><input class="selectMap" title="Type new map name, Ctrl+Backspace to delete text. Click X to remove map, Click + to create new." placeholder="Select a map" type="text" list="maplist" name="category"><datalist id="maplist"></datalist><button title="Create New Map" class="addMap">+</button>'
+var selector = '<button title="Delete Map" class="deleteMap">X</button><input class="selectMap" title="Type new map name, Ctrl+Backspace to delete text. Click X to remove map, Click ➥ to change or create new." placeholder="Select a map" type="text" list="maplist" name="category"><datalist id="maplist"></datalist><button title="Create New Map" class="addMap">➥</button>'
 
 $('.navigatorContainer').prepend(selector);
 
@@ -221,7 +221,51 @@ function ZEN_mode() {
   $('.toolbar').toggle();
   $('.countContainer').toggle();
   $('.navigatorContainer').children().toggle();
+  $('.mapname').toggle();
   $('.ZEN').css('display','block');
   
 
 }
+
+$(document).ready(function() {
+  if (window.location.href.indexOf("?mapname=") > -1) {
+    console.log("your url contains the name franky");
+  }
+  else { window.location.href = window.location.href + '?mapname='}
+});
+
+
+//delete selected map
+$('.deleteMap').on('click',function(){
+
+localStorage.removeItem(newmapname);
+
+$('#maplist').find('option').remove();
+KEYS = Object.keys(localStorage);
+
+KEYS = jQuery.grep(KEYS, function(value) {
+  return value != R1;
+});
+KEYS = jQuery.grep(KEYS, function(value) {
+  return value != R2;
+});
+KEYS = jQuery.grep(KEYS, function(value) {
+  return value != R3;
+});
+KEYS = jQuery.grep(KEYS, function(value) {
+  return value != R4;
+});
+
+$.each(KEYS, function(i, obj) {
+  $('#maplist').append("<option value="+obj+"></option>")
+});
+
+
+
+
+
+})
+
+//Mapname display
+$('#app').append('<span class="mapname">test</span>');
+$('.mapname').text(mapname);
