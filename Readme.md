@@ -79,5 +79,8 @@ Load mindmap
 
 Save mindmap locally
 
+Donate
+https://www.donationalerts.com/r/gothlab
+
 
 
