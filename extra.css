@@ -1,3 +1,7 @@
+
+
+
+
 html body #app .toolbarContainer .toolbar .toolbarBlock {
     display: flex;
     
@@ -10,24 +14,18 @@ html body #app .toolbarContainer .toolbar .toolbarBlock {
      border: 0;
     
     margin-right: 20px;
-},
+}
 
 
 
 html body #app .sidebarContainer {
-    position: fixed;
-    right: -300px;
-    top: 100px;
-    bottom: 0;
-    width: 300px;
+
     
     background-color: #666;
     
     border-left: 1px solid #e8e8e8;
-    display: flex;
-    flex-direction: column;
-    transition: all .3s;
-},
+   
+}
 
 html body #app .navigatorContainer{
     padding: 0 12px;
@@ -41,7 +39,7 @@ html body #app .navigatorContainer{
     font-size: 12px;
     display: flex;
     align-items: center;
-},
+}
 
 html body #app .countContainer {
     padding: 0 12px;
@@ -56,7 +54,7 @@ html body #app .countContainer {
     height: 22px;
     line-height: 22px;
     font-size: 12px;
-    display: flex;
+    display: none;
 }
 
 
@@ -98,6 +96,7 @@ html body #app .countContainer{
     height: 22px;
     line-height: 22px;
     font-size: 12px;
+    display: none;
 
 }
 
@@ -480,4 +479,63 @@ color: white;
     padding: 12px;
     font-size: 10px;
     color: rgba(255, 255, 255, 0.509);
+}
+
+
+
+
+html body #app .sidebarTriggerContainer {
+      margin-top: 0px;
+    top: 40%;
+}
+
+html body #app .sidebarTriggerContainer .trigger {
+
+    width: 38px;
+    border-color: #626262;
+    background-color: #2b2b2b;
+    box-shadow: 0 2px 16px 0 rgb(84 84 84 / 6%);
+}
+
+
+html body #app  .sidebarTriggerContainer .trigger .triggerItem {
+
+    height: 41px;
+}
+
+
+
+
+.triggerItem:hover {
+
+    background-color: #2e2e2e!important;
+}
+
+
+html body #app .sidebarTriggerContainer .trigger .triggerItem .triggerName {
+  
+    display: none!important;
+  }
+
+
+
+
+
+  html body #app .container .navigatorContainer .item {
+    margin-right: 4px;
+  }
+
+  html body #app .container .navigatorContainer  {
+    padding: 0px;
+  }
+
+  html body #app .el-tree {
+
+background: #303030;
+
+  }
+  
+
+  .el-tree-node__content:hover {
+    background-color: #363636;
 }
