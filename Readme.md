@@ -1,7 +1,10 @@
 # Obsidian-Mindmap-Canvas
 ## About
 Canvas mindmap for obsidian while we waiting for Obisidian canvas update.
-![/images/Pasted image 20221210115007.png]
+
+![](images/Pasted_image_20221210115007.png)
+
+
 ## [!] Notion
 Mindmap is build upon exceptional work of **wanglin2**. https://github.com/wanglin2/mind-map
 Plugin can be buggy, uncomfortable and inconsistent.
@@ -32,10 +35,14 @@ Custom frames plugin https://github.com/Ellpeck/ObsidianCustomFrames
 ## Functionality
 
 ### First open:
-![[/images/Pasted image 20221210115504.png]]
+
+![](images/Pasted_image_20221210115504.png)
+
 **Language:**
 Click on first **text button** in bottom panel and change language to ENGLISH
-![[/images/Pasted image 20221210115532.png]]
+
+![](images/Pasted_image_20221210115532.png)
+
 **Dark Theme:**
 Click on T-Shirt icon on right panel. Choose dark looking theme.
 
