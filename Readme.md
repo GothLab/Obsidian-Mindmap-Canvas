@@ -1,6 +1,6 @@
 # Obsidian-Mindmap-Canvas
 ## About
-Canvas mindmap for obsidian while we waiting for Obisidian canvas update.
+Canvas mindmap for obsidian while we waiting for Obsidian canvas update.
 
 ![](images/Pasted_image_20221210115007.png)
 
