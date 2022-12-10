@@ -539,3 +539,50 @@ background: #303030;
   .el-tree-node__content:hover {
     background-color: #363636;
 }
+
+
+
+
+
+html body #app .toastui-editor-md-preview-highlight {
+  color: black;
+}
+
+html body #app .toastui-editor-contents p {
+ 
+  color: #dadada;
+}
+
+html body #app .toastui-editor-main .toastui-editor-md-splitter {
+
+  background-color: #545454;}
+
+  html body #app .toastui-editor-ww-container {
+
+  background-color: #1b1b1b;
+}
+html body #app .toastui-editor-mode-switch .tab-item {
+
+  background: #1f1f1f;
+
+  border: 1px solid #1d1d1d;
+}
+html body #app .toastui-editor-mode-switch .tab-item.active {
+
+  border-top: 1px solid #686868;
+  background-color: #232323;
+  color: #a9a9a9;
+}
+html body #app .toastui-editor-toolbar-divider {
+
+  background-color: #757575;
+}
+html body #app .toastui-editor-dropdown-toolbar {
+
+  border: 1px solid #4e4e4e;
+  background-color: #222222;
+}
+html body #app .ProseMirror {
+
+  color: #a7a7a7;
+}
