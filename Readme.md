@@ -1,7 +1,7 @@
 # Obsidian-Mindmap-Canvas
 ## About
 Canvas mindmap for obsidian while we waiting for Obisidian canvas update.
-![[/images/Pasted image 20221210115007.png]]
+![/images/Pasted image 20221210115007.png]
 ## [!] Notion
 Mindmap is build upon exceptional work of **wanglin2**. https://github.com/wanglin2/mind-map
 Plugin can be buggy, uncomfortable and inconsistent.
